@@ -1,0 +1,8 @@
+The ratio of the dimensions of Plank's constant and
+that of the moment of inertia
+is the dimension of:
+
+(a) frequency
+(b) velocity
+(c) angular momentum
+(d) time

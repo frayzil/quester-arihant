@@ -1,0 +1,100 @@
+Y:
+  name: yotta
+  symbol: Y
+  decimal_exponent: 24
+  english_word: septillion
+Z:
+  name: zetta
+  symbol: Z
+  decimal_exponent: 21
+  english_word: sextillion
+E:
+  name: exa
+  symbol: E
+  decimal_exponent: 18
+  english_word: quintillion
+P:
+  name: peta
+  symbol: P
+  decimal_exponent: 15
+  english_word: quadrillion
+T:
+  name: tera
+  symbol: T
+  decimal_exponent: 12
+  english_word: trillion
+G:
+  name: giga
+  symbol: G
+  decimal_exponent: 9
+  english_word: billion
+M:
+  name: mega
+  symbol: M
+  decimal_exponent: 6
+  english_word: million
+k:
+  name: kilo
+  symbol: k
+  decimal_exponent: 3
+  english_word: thousand
+h:
+  name: hecto
+  symbol: h
+  decimal_exponent: 2
+  english_word: hundred
+d:
+  name: deca
+  symbol: da
+  decimal_exponent: 1
+  english_word: ten
+d:
+  name: deci
+  symbol: d
+  decimal_exponent: −1 1
+  english_word: tenth
+c:
+  name: centi
+  symbol: c
+  decimal_exponent: −2 01
+  english_word: hundredth
+m:
+  name: milli
+  symbol: m
+  decimal_exponent: −3 001
+  english_word: thousandth
+μ:
+  name: micro
+  symbol: μ
+  decimal_exponent: −6
+  english_word: millionth
+n:
+  name: nano
+  symbol: n
+  decimal_exponent: −9
+  english_word: billionth
+p:
+  name: pico
+  symbol: p
+  decimal_exponent: −12
+  english_word: trillionth
+f:
+  name: femto
+  symbol: f
+  decimal_exponent: −15
+  english_word: quadrillionth
+a:
+  name: atto
+  symbol: a
+  decimal_exponent: −18
+  english_word: quintillionth
+z:
+  name: zepto
+  symbol: z
+  decimal_exponent: −21
+  english_word: sextillionth
+y:
+  name: yocto
+  symbol: y
+  decimal_exponent: −24
+  english_word: septillionth

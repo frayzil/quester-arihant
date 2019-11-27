@@ -1,0 +1,6 @@
+The dimension of Angular Momentum / Magnetic Moment:
+
+(a) M^3L^1T^-2A^2
+(b) M^1A^-1T^-1
+(c) M^1L^2T^1A^-2
+(d) M^2L^-3T^2A^1

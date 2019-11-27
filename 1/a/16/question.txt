@@ -1,0 +1,10 @@
+A plane is inclined at an angle of 30 degrees with the horizontal.
+The component of a vector A = -10 k perpendicular to this plane is:
+
+Here z-direction is vertically upwards
+     y-direction is into the inclined plane
+
+(a) 5 * 2.sqrt
+(b) 5 * 3.sqrt
+(c) 5
+(d) 2.5

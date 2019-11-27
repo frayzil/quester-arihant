@@ -1,0 +1,14 @@
+The x-y plane is the boundary between two transparent media.
+Medium-1 with z > 0 has a refractive index of sqrt2 and
+medium-2 with z < 0 has a refractive index  sqrt3.
+
+A ray of lignt in medium-1 given by vector A = sqrt3 i - k
+is incident on the plane of separation.
+
+The unit vector in the direction of
+the refracted ray in medium-2 is:
+
+(a) 1/sqrt2 (k - i)
+(b) 1/sqrt2 (i + j)
+(c) 1/sqrt2 (i - k)
+(d) 1/sqrt2 (i + k)

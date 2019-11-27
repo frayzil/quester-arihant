@@ -1,0 +1,8 @@
+The dimensions of h/e
+(h = Plank's constant and e = electron charge)
+are the same as that of:
+
+(a) magnetic flux
+(b) electric flux
+(c) electric field
+(d) magnetic field

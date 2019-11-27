@@ -1,0 +1,6 @@
+The dimension of Electric Field**2 / Permeability of Free Space:
+
+(a) M^2L^3T^-2A^2
+(b) M^1L^1T^-4
+(c) M^1L^3T-3
+(d) M^-1L^2T^1A^-2

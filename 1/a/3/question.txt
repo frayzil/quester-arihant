@@ -1,0 +1,7 @@
+The dimensions of the quantity inductance/capacitance
+is identical to:
+
+(a) 1 / resistance
+(b) 1 / time2
+(c) 1 / resistance2
+(d) none of these
