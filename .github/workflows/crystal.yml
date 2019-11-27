@@ -12,8 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Enabling globstar
-      run: shopt -s globstar
     - name: Install dependencies
       run: shards install
     - name: Run tests
