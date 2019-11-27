@@ -44,7 +44,7 @@ class Unit
     # @prefix = Unit::Prefix.for(match.captures[0])
   end
 
-  def **(exponent : Int32)
+  def **(exponent : Int32 | Float64)
     Unit.new(dimension: dimension * exponent)
   end
 
