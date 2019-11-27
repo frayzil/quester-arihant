@@ -89,7 +89,7 @@ class Dimension
     parts << "L#{length}" unless length == 0
     parts << "T#{time}" unless time == 0
     parts << "K#{temperature}" unless temperature == 0
-    parts << "#{electric_current}" unless electric_current == 0
+    parts << "I#{electric_current}" unless electric_current == 0
     parts << "J#{luminous_intensity}" unless luminous_intensity == 0
     parts << "N#{amount_of_substance}" unless amount_of_substance == 0
 
