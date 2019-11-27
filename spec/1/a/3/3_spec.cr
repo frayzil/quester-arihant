@@ -1,7 +1,7 @@
 require "spec"
 require "./solver_3.cr"
 
-require"../../../../quantity.cr"
+require "../../../../quantity.cr"
 
 describe Solver3 do
   settings = [
