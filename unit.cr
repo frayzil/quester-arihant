@@ -11,6 +11,8 @@ class Unit
   GRAM = new(symbol: "g", dimension: Dimension::M)
   COULOMB = new(symbol: "C", dimension: Dimension::IT)
 
+  KELVIN = new(symbol: "K", dimension: Dimension::K)
+
   NEWTON = new(symbol: "N", dimension: Dimension.new(
     mass: 1,
     length: 1,
