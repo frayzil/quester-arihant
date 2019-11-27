@@ -55,6 +55,16 @@ class Measure
     unit: Unit::FARAD / Unit::METER 
   )
 
+  STEFAN_CONSTANT = new(
+    value: 5.67 * 10.0 ** -8,
+    unit: Unit::KILOGRAM / (Unit::SECOND ** 3 * Unit::KELVIN ** 4)
+  )
+
+  WEIN_CONSTANT = new(
+    value: 2.89 * 10.0 ** -3,
+    unit: Unit::METER * Unit::KELVIN
+  )
+
   def initialize(
     @value : Float64 | Measure,
     @unit : Unit,
