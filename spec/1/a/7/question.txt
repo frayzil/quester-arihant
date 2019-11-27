@@ -1,6 +1,6 @@
 The dimensions of e^2/(e0 * h * c)
 
-(a) M0L0T0
-(b) M2L-2T-4I-2
-(c) M3L2T-2I2
-(d) M0L-3T2A-3
+(a) M^0L^0T^0
+(b) M^1L^4T^-3
+(c) M^1L^-2T^1
+(d) M^1L^6T^-3
