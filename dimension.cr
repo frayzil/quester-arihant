@@ -17,15 +17,15 @@ class Dimension
   IT = I + T
 
   def initialize(
-    @mass : Int32 = 0,
-    @length : Int32 = 0,
-    @time : Int32 = 0,
-    @temperature : Int32 = 0,
-    @electric_current : Int32 = 0,
-    @luminous_intensity : Int32 = 0,
-    @amount_of_substance : Int32 = 0,
-    @plane_angle : Int32 = 0,
-    @solid_angle : Int32 = 0
+    @mass : Int32 | Float64 = 0,
+    @length : Int32 | Float64 = 0,
+    @time : Int32 | Float64 = 0,
+    @temperature : Int32 | Float64 = 0,
+    @electric_current : Int32 | Float64 = 0,
+    @luminous_intensity : Int32 | Float64 = 0,
+    @amount_of_substance : Int32 | Float64 = 0,
+    @plane_angle : Int32 | Float64 = 0,
+    @solid_angle : Int32 | Float64 = 0
   )
   end
 
@@ -69,7 +69,7 @@ class Dimension
       solid_angle == other.solid_angle
   end
 
-  def *(factor : Int32)
+  def *(factor : Int32 | Float64)
     Dimension.new(
       mass: mass * factor,
       length: length * factor,
