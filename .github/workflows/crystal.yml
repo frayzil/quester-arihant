@@ -15,4 +15,15 @@ jobs:
     - name: Install dependencies
       run: shards install
     - name: Run tests
-      run: crystal spec ./**/spec.cr
+      run: >-
+        crystal spec
+          ./1/a/1/spec.cr
+          ./1/a/2/spec.cr
+          ./1/a/3/spec.cr
+          ./1/a/4/spec.cr
+          ./1/a/5/spec.cr
+          ./1/a/6/spec.cr
+          ./1/a/7/spec.cr
+          ./1/a/14/spec.cr
+          ./1/a/16/spec.cr
+          ./1/a/22/spec.cr
