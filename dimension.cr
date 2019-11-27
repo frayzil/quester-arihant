@@ -85,13 +85,13 @@ class Dimension
 
   def to_s
     parts = [] of String
-    parts << "M#{mass}" unless mass == 0
-    parts << "L#{length}" unless length == 0
-    parts << "T#{time}" unless time == 0
-    parts << "K#{temperature}" unless temperature == 0
-    parts << "I#{electric_current}" unless electric_current == 0
-    parts << "J#{luminous_intensity}" unless luminous_intensity == 0
-    parts << "N#{amount_of_substance}" unless amount_of_substance == 0
+    parts << "M#{mass.to_i}" unless mass == 0
+    parts << "L#{length.to_i}" unless length == 0
+    parts << "T#{time.to_i}" unless time == 0
+    parts << "K#{temperature.to_i}" unless temperature == 0
+    parts << "I#{electric_current.to_i}" unless electric_current == 0
+    parts << "J#{luminous_intensity.to_i}" unless luminous_intensity == 0
+    parts << "N#{amount_of_substance.to_i}" unless amount_of_substance == 0
 
     parts.join
   end
