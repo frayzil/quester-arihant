@@ -17,6 +17,10 @@ class Unit
     time: -2
   ))
 
+  JOULE = NEWTON * METER
+  VOLT = JOULE / COULOMB
+  FARAD = COULOMB / VOLT
+
   CONVERSIONS = [
     {
       from: KILOGRAM,
