@@ -50,6 +50,11 @@ class Measure
     unit: Unit::NEWTON / Unit::AMPERE ** 2
   )
 
+  EPSILON_NAUGHT = new(
+    value: 8.854 * 10.0 **-12,
+    unit: Unit::FARAD / Unit::METER 
+  )
+
   def initialize(
     @value : Float64 | Measure,
     @unit : Unit,
