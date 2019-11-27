@@ -129,6 +129,13 @@ class Measure
     )
   end
 
+  def **(exponent : Float64)
+    Measure.new(
+      value: value ** exponent,
+      unit: unit ** exponent
+    )
+  end
+
   def ==(other : Measure)
     value == other.measured_in(new_unit: unit).value
   end
