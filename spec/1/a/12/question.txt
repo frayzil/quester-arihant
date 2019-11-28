@@ -1,0 +1,6 @@
+The dimensions of quantity hc (where h = h/2* pi) is
+
+(a) M1L2T-1
+(b) MLT-1
+(c) ML3T-2
+(d) ML3T-1
