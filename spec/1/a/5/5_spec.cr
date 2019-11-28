@@ -8,7 +8,7 @@ require "../../../../quantity.cr"
 describe Solver5 do
   settings = [
     {
-      quantity_1: Quantity::ELECTRIC_FIELD ** 2,
+      quantity_1: Quantity::ELECTRIC_FIELD,
       measure_2: Measure::PERMEABILITY_OF_FREE_SPACE,
       answer: Dimension.new(mass: 1, length: 1, time: -4)
     },
@@ -16,7 +16,7 @@ describe Solver5 do
     {
       quantity_1: Quantity::MAGNETIC_FLUX,
       measure_2: Measure::ELECTRON_CHARGE,
-      answer: Dimension.new(mass: 1, length: 2, time: -3, electric_current: -2)
+      answer: Dimension.new(mass: 2, length: 4, time: -5, electric_current: -3)
     }
   ]
 
