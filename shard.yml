@@ -3,8 +3,13 @@ version: 0.1.0
 
 authors:
   - Syed Fazil Basheer <fazil.basheer@quester.xyz>
+  - Feem <mohamedfaheemthanveer@gmail.com>
 
 description: |
   Short description of arihant
+
+development_dependencies:
+  bottle:
+    github: crystal-data/bottle
 
 license: MIT
