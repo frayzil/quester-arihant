@@ -11,13 +11,13 @@ describe Solver10 do
       quantity_1: Quantity::TIME,
       quantity_2: Quantity::PRESSURE,
       quantity_3: Quantity::LENGTH,
-      answer: Dimension.new(mass: 1, time: -2)
+      answer: Dimension.from_s("M1T-2")
     },
     {
       quantity_1: Quantity::FREQUENCY,
       quantity_2: Quantity::ANGULAR_ACCELERATION,
       quantity_3: Quantity::INDUCTANCE,
-      answer: Dimension.new(mass: 1, length: 2, time: -4, electric_current: -2)
+      answer: Dimension.from_s("M1L2T-4I-2")
     }
   ]
 

@@ -10,12 +10,12 @@ describe Solver12 do
     {
       measure_1: Measure::PLANKS_CONSTANT,
       measure_2: Measure::SPEED_OF_LIGHT,
-      answer: Dimension.new(mass: 1, length: 3, time: -2)
+      answer: Dimension.from_s("M1L3T-2")
     },
     {
       measure_1: Measure::GRAVITATIONAL_CONSTANT,
       measure_2: Measure::ELECTRON_MASS,
-      answer: Dimension.new(mass: 0, length: 3, time: -2)
+      answer: Dimension.from_s("L3T-2")
     }
   ]
 

@@ -11,7 +11,7 @@ describe Solver8 do
 
       measure_1: Measure::STEFAN_CONSTANT,
       measure_2: Measure::WEIN_CONSTANT,
-      answer: Dimension.new(mass: 1, length: 4, time: -3)
+      answer: Dimension.from_s("M1L4T-3")
     }
   ]
 

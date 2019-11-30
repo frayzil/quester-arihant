@@ -12,21 +12,21 @@ describe Solver9 do
       quantity_2: Quantity::VOLTAGE,
       quantity_3: Quantity::SPECIFIC_RESISTANCE,
       measure_1: Measure::EPSILON_NAUGHT,
-      answer: Dimension.new(electric_current: 1)
+      answer: Dimension.from_s("I1")
     },
     {
       quantity_1: Quantity::FREQUENCY,
       quantity_2: Quantity::MOMENT_OF_INERTIA,
       quantity_3: Quantity::RESISTANCE,
       measure_1: Measure::SPEED_OF_LIGHT,
-      answer: Dimension.new(length: -1, time: 3, electric_current: 2)
+      answer: Dimension.from_s("L-1T3I2")
     },
     {
       quantity_1: Quantity::ELECTRIC_FIELD,
       quantity_2: Quantity::PERMEABILITY,
       quantity_3: Quantity::MOMENTUM,
       measure_1: Measure::STEFAN_CONSTANT,
-      answer: Dimension.new(length: 3, time: -3, temperature: 4, electric_current: -3)
+      answer: Dimension.from_s("L3T-3K4I-3")
     }
   ]
 
