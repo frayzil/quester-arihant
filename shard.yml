@@ -8,8 +8,8 @@ authors:
 description: |
   Short description of arihant
 
-development_dependencies:
+dependencies:
   bottle:
     github: crystal-data/bottle
-
+    branch: master
 license: MIT

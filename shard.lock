@@ -1,0 +1,6 @@
+version: 1.0
+shards:
+  bottle:
+    github: crystal-data/bottle
+    commit: 5a7515191753f3d6b42c31be47602b3c682b1c9e
+
