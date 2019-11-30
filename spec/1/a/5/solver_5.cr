@@ -7,7 +7,7 @@ class Solver5
   end
 
   def solve
-    (quantity_1.dimension - measure_2.dimension)
+    ((quantity_1  ** 2).dimension - measure_2.dimension)
   end
 
 end
