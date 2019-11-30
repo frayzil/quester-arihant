@@ -95,4 +95,22 @@ class Dimension
 
     parts.join
   end
+
+  def self.from_s(string : String)
+    mass = string.match(/m(-?\d)/i).try &.[1].to_i || 0
+    length = string.match(/l(-?\d)/i).try &.[1].to_i || 0
+    time = string.match(/t(-?\d)/i).try &.[1].to_i || 0
+    temperature = string.match(/k(-?\d)/i).try &.[1].to_i || 0
+    electric_current = string.match(/i(-?\d)/i).try &.[1].to_i || 0
+    luminous_intensity = string.match(/j(-?\d)/i).try &.[1].to_i || 0
+    amount_of_substance = string.match(/n(-?\d)/i).try &.[1].to_i || 0
+
+    new(mass,
+        length, 
+        time, 
+        temperature, 
+        electric_current, 
+        luminous_intensity, 
+        amount_of_substance)
+  end
 end
