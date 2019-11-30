@@ -10,7 +10,7 @@ describe Solver6 do
     {
       quantity_1: Quantity::ANGULAR_MOMENTUM,
       quantity_2: Quantity::MAGNETIC_MOMENT,
-      answer: Dimension.new(mass: 1, time: -1, electric_current: -1)
+      answer: Dimension.from_s("M1T-1I-1")
     }
   ]
 

@@ -10,13 +10,13 @@ describe Solver5 do
     {
       quantity_1: Quantity::ELECTRIC_FIELD,
       measure_2: Measure::PERMEABILITY_OF_FREE_SPACE,
-      answer: Dimension.new(mass: 1, length: 1, time: -4)
+      answer: Dimension.from_s("M1L1T-4")
     },
 
     {
       quantity_1: Quantity::MAGNETIC_FLUX,
       measure_2: Measure::ELECTRON_CHARGE,
-      answer: Dimension.new(mass: 2, length: 4, time: -5, electric_current: -3)
+      answer: Dimension.from_s("M2L4T-5I-3")
     }
   ]
 

@@ -13,11 +13,7 @@ class Unit
 
   KELVIN = new(symbol: "K", dimension: Dimension::K)
 
-  NEWTON = new(symbol: "N", dimension: Dimension.new(
-    mass: 1,
-    length: 1,
-    time: -2
-  ))
+  NEWTON = new(symbol: "N", dimension: Dimension.from_s("M1L1T-2"))
 
   JOULE = NEWTON * METER
   VOLT = JOULE / COULOMB
