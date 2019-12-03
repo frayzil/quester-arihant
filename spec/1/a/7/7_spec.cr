@@ -50,7 +50,7 @@ class Scenario7
                               measure_4: measure_4
                             ).solve
 
-      calculated_answer.to_s.should eq(answer.to_s)
+      calculated_answer.should eq(answer)
     end
   end
 end

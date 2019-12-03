@@ -9,13 +9,13 @@ describe Solver4 do
     {
       measure_1: Measure::PLANKS_CONSTANT,
       measure_2: Measure::ELECTRON_CHARGE,
-      answer: Quantity::MAGNETIC_FLUX
+      answer: Quantity::MAGNETIC_FLUX.dimension
     },
 
     {
       measure_1: Measure::PLANKS_CONSTANT * Measure::SPEED_OF_LIGHT,
       measure_2: Measure.new(value: 1.0, unit: Unit::METER),
-      answer: Quantity::ENERGY
+      answer: Quantity::ENERGY.dimension
     },
 
   ]
@@ -35,7 +35,7 @@ class Scenario4
   def initialize(
     @measure_1 : Measure,
     @measure_2 : Measure,
-    @answer : Quantity
+    @answer : Dimension
   );end
 
   def test
@@ -48,7 +48,7 @@ class Scenario4
                               measure_2: measure_2,
                             ).solve
 
-      calculated_answer.to_s.should eq(answer.dimension.to_s)
+      calculated_answer.should eq(answer)
     end
   end
 end

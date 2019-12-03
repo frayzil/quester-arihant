@@ -41,7 +41,7 @@ class Scenario8
                               measure_2: measure_2
                             ).solve
 
-      calculated_answer.to_s.should eq(answer.to_s)
+      calculated_answer.should eq(answer)
     end
   end
 end
