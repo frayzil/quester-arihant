@@ -10,28 +10,28 @@ describe Solver1 do
       measure: Measure::PLANKS_CONSTANT,
       quantity: Quantity::MOMENT_OF_INERTIA,
       operation: :ratio,
-      answer: Quantity::FREQUENCY
+      answer: (Quantity::FREQUENCY).dimension
     },
 
     {
       measure: Measure::GRAVITATIONAL_CONSTANT,
       quantity: Quantity::DENSITY,
       operation: :product,
-      answer: Quantity::ANGULAR_ACCELERATION
+      answer: (Quantity::ANGULAR_ACCELERATION).dimension
     },
 
     {
       measure: Measure::ELECTRON_MASS,
       quantity: Quantity::FORCE,
       operation: :ratio,
-      answer: Quantity::NIL / Quantity::ACCELERATION
+      answer: (Quantity::NIL / Quantity::ACCELERATION).dimension
     },
 
     {
       measure: Measure::PI,
       quantity: Quantity::AREA,
       operation: :ratio,
-      answer: Quantity::NIL / Quantity::AREA 
+      answer: (Quantity::NIL / Quantity::AREA).dimension
     },
   ]
 
@@ -52,7 +52,7 @@ class Scenario1
     @measure : Measure,
     @quantity : Quantity,
     @operation : Symbol,
-    @answer : Quantity
+    @answer : Dimension
   );end
 
   def test
@@ -66,7 +66,7 @@ class Scenario1
                               operation: operation
                             ).solve
 
-      calculated_answer.should eq(answer.dimension)
+      calculated_answer.should eq(answer)
     end
   end
 end
