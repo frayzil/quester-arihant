@@ -47,7 +47,7 @@ class Scenario3
                               quantity_2: quantity_2,
                             ).solve
 
-      calculated_answer.to_s.should eq(answer.to_s)
+      calculated_answer.should eq(answer)
     end
   end
 end

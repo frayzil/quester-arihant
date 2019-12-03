@@ -59,6 +59,10 @@ class Quantity
     self.class.new(dimension - other.dimension)
   end
 
+  def ==(other : Quantity)
+    dimension == other.dimension
+  end
+
   def **(exponent : Int32)
     self.class.new(dimension * exponent)
   end
