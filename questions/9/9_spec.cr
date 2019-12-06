@@ -1,9 +1,9 @@
 require "spec"
 require "./solver_9.cr"
 
-require "../../../../measure.cr"
-require "../../../../dimension.cr"
-require "../../../../quantity.cr"
+require "../../measure.cr"
+require "../../dimension.cr"
+require "../../quantity.cr"
 
 describe Solver9 do
   settings = [
