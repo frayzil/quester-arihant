@@ -1,8 +1,8 @@
 require "spec"
 require "./solver_1.cr"
 
-require "../../measure.cr"
-require "../../quantity.cr"
+require "../../ilm/measure.cr"
+require "../../ilm/quantity.cr"
 
 describe Solver1 do
   settings = [

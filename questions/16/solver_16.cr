@@ -1,5 +1,5 @@
-require "../../axis.cr"
-require "../../point.cr"
+require "../../ilm/axis.cr"
+require "../../ilm/point.cr"
 
 class Solver16
   @axis : Axis

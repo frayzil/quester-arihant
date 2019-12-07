@@ -1,7 +1,7 @@
 require "spec"
 require "./solver_22.cr"
 
-require "../../vector.cr"
+require "../../ilm/vector.cr"
 
 describe Solver22 do
   settings = [

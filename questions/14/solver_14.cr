@@ -1,5 +1,5 @@
-require "../../angle.cr"
-require "../../vector.cr"
+require "../../ilm/angle.cr"
+require "../../ilm/vector.cr"
 
 class Solver14
   property angle, vector

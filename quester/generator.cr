@@ -1,6 +1,6 @@
-# require "./generators/questions_yml/question_yml_generator.cr"
+require "./generators/questions_yml/question_yml_generator.cr"
 
-# QuestionYmlGenerator.new.generate
+QuestionYmlGenerator.new.generate
 
 require "./generators/questions/question_from_yaml.cr"
 

@@ -1,6 +1,6 @@
-require "../../axis.cr"
-require "../../point.cr"
-require "../../angle.cr"
+require "../../ilm/axis.cr"
+require "../../ilm/point.cr"
+require "../../ilm/angle.cr"
 
 class Solver22
   property mu_1, mu_2, incident_vector
