@@ -26,18 +26,12 @@ class QuestionGenerator
   
   def generate
     puts "#{self.class.name}#generate"
-    make_txt_file
     make_spec_file
   
     @solvers.each do |solver|
       make_scenario_file(solver)
       make_solver_file(solver)
     end
-  end
-
-  private def make_txt_file
-    puts "#{self.class.name}#make_txt_file"
-    File.new("#{@folder.path}/question.txt", "w+")
   end
 
   private def make_spec_file
