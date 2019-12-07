@@ -14,7 +14,7 @@ class QuestionFromYaml
   YAML.mapping(
     variables: Array(String),
     test_cases: Array(Array(NamedTuple(name: String, value: String))),
-    solvers: Array(NamedTuple(variable: String, condition: String, code: String))
+    solvers: Array(NamedTuple(id: Int32, variable: String, condition: String, code: String))
   )
 
   def self.load(path)

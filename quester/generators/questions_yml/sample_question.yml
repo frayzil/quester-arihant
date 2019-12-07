@@ -27,11 +27,13 @@ test_cases:
 
 solvers:
   - 
+    id: 1
     variable: float64
     condition: eq
     code: int32_1 + int32_2
 
   - 
+    id: 2
     variable: int32_1
     condition: eq
     code: float64 - int32_2

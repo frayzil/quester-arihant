@@ -1,9 +1,11 @@
 class Solver
+  property id : Int32
   property variable : Variable
   property condition : String
   property code : String
 
   def initialize(
+    @id,
     @variable,
     @condition = "eq",
     @code = "#"
@@ -17,6 +19,7 @@ class Solver
       raise "Variable not found" if variable.nil?
 
       new(
+        id: solver_data[:id],
         variable: variable,
         condition: solver_data[:condition],
         code: solver_data[:code],
