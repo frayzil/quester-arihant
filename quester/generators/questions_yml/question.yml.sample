@@ -1,3 +1,6 @@
+text: >
+  Write 1 + 2 in decimal form.
+
 variables:
   - int32_1
   - int32_2
@@ -42,3 +45,6 @@ solvers:
     code: >
       #
           float64 - int32_2
+
+source: >
+  This question was found in <book> by <author> ...

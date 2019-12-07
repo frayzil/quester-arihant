@@ -1,0 +1,65 @@
+text: >
+  Which of the following sets have different dimensions?
+    (a) Pressure, Young's modulus (Stiffness), Stress
+    (b) EMF(Voltage), Potential difference, Electric potential
+    (c) Heat, Work done, Energy
+    (d) Dipole moment, Electric flux, Electric field
+
+variables:
+  - quantity_1
+  - quantity_2
+  - quantity_3
+  - "selected : String"
+
+test_cases:
+  - 
+    -
+      name: quantity_1
+      value: Pressure
+    -
+      name: quantity_2
+      value: Stiffness
+    -
+      name: quantity_3
+      value: Stress
+    -
+      name: selected
+      value: "\"no\""
+
+  - 
+    -
+      name: quantity_1
+      value: EMF
+    -
+      name: quantity_2
+      value: Potential difference
+    -
+      name: quantity_3
+      value: Electric potential
+    -
+      name: selected
+      value: "\"yes\""
+
+solvers:
+  - 
+    id: 1
+    variable: selected
+    condition: eq
+    code: >
+      #
+          if quantity_1.dimension == quantity_2.dimension &&
+             quantity_2.dimension == quantity_3.dimension
+            "yes"
+          else
+            "no"
+          end
+
+source: >
+  This question was found in ISIBN 818993900-9
+    New Pattern IITJEE Physics
+    D C Pandey
+    Arihant Publication
+
+    Chapter 1 - General Physics and Vectors
+      Section A - Only one Option is Correct
+        Question# 49

@@ -28,7 +28,7 @@ class QuestionYmlGenerator
     File.new(yml_file_name, "w+")
     File.write(
       yml_file_name,
-      File.read("quester/generators/questions_yml/sample_question.yml")
+      File.read("quester/generators/questions_yml/question.yml.sample")
     )
   end
 
