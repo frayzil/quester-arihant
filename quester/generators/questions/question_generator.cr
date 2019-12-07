@@ -17,13 +17,11 @@ class QuestionGenerator
   @variables : Array(Variable) = [] of Variable
   @test_cases: Array(TestCase) = [] of TestCase
   @solvers : Array(Solver) = [] of Solver
-  @solver : Solver
 
   def initialize(@number, @variables, @test_cases, @solvers)
     puts "#{self.class.name}#initialize"
     @folder = Dir.new("questions/#{@number}")
     @prefix = "#{@folder.path}/#{@number}"
-    @solver = @solvers.first
   end
   
   def generate
@@ -31,8 +29,10 @@ class QuestionGenerator
     make_txt_file
     make_spec_file
   
-    make_scenario_file
-    make_solver_file
+    @solvers.each do |solver|
+      make_scenario_file(solver)
+      make_solver_file(solver)
+    end
   end
 
   private def make_txt_file
@@ -42,16 +42,16 @@ class QuestionGenerator
 
   private def make_spec_file
     puts "#{self.class.name}#make_spec_file"
-    SpecFileCreator.new(@prefix, @number, @test_cases).create
+    SpecFileCreator.new(@prefix, @number, @test_cases, @solvers).create
   end
 
-  def make_scenario_file
+  def make_scenario_file(solver)
     puts "#{self.class.name}#make_scenario_file"
-    ScenarioFileCreator.new(@prefix, @number, @variables, @solver).create
+    ScenarioFileCreator.new(@prefix, @number, @variables, solver).create
   end
 
-  private def make_solver_file
+  private def make_solver_file(solver)
     puts "#{self.class.name}#make_solver_file"
-    SolverFileCreator.new(@prefix, @number, @variables, @solver).create
+    SolverFileCreator.new(@prefix, @number, @variables, solver).create
   end
 end

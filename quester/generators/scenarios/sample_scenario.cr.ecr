@@ -1,4 +1,4 @@
-class Scenario<%= @number %>
+class Scenario<%= @number %>_<%= @solver.id %>
   <% @variables.each do |variable| -%>
     <%-= "property #{variable.name} : #{variable.type}" %>
   <% end -%>
@@ -12,7 +12,7 @@ class Scenario<%= @number %>
 
   def test
     it "should pass" do
-      solver = Solver<%= @number %>.new(
+      solver = Solver<%= @number %>_<%= @solver.id %>.new(
         <% @known_variables.each do |variable| -%>
           <%-= "#{variable.name}: #{variable.name}" %>,
         <% end -%>

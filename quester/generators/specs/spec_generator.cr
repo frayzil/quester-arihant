@@ -5,7 +5,8 @@ require "../../core/test_case.cr"
 class SpecGenerator
   def initialize(
     @number : Int32,
-    @test_cases : Array(TestCase)
+    @test_cases : Array(TestCase),
+    @solvers : Array(Solver),
   )
     puts "#{self.class.name}#initialize"
   end

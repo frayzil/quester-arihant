@@ -10,7 +10,7 @@ class SolverFileCreator
 
   def create
     puts "#{self.class.name}#create"
-    solver_file_name = "#{@prefix}_solver.cr"
+    solver_file_name = "#{@prefix}_#{@solver.id}_solver.cr"
     File.new(solver_file_name, "w+")
     File.write(
       solver_file_name,

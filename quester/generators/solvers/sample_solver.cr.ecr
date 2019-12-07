@@ -1,4 +1,4 @@
-class Solver<%= @number %>
+class Solver<%= @number %>_<%= @solver.id %>
   <% @known_variables.each do |variable| -%>
     <%-= "property #{variable.name} : #{variable.type}" %>
   <% end -%>

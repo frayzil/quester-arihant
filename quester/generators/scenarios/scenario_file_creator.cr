@@ -10,7 +10,7 @@ class ScenarioFileCreator
 
   def create
     puts "#{self.class.name}#create"
-    scenario_file_name = "#{@prefix}_scenario.cr"
+    scenario_file_name = "#{@prefix}_#{@solver.id}_scenario.cr"
     File.new(scenario_file_name, "w+")
     File.write(
       scenario_file_name,

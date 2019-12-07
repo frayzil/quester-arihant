@@ -2,7 +2,8 @@ class SpecFileCreator
   def initialize(
     @prefix : String,
     @number : Int32,
-    @test_cases : Array(TestCase)
+    @test_cases : Array(TestCase),
+    @solvers : Array(Solver),
   )
     puts "#{self.class.name}#initialize"
   end
@@ -15,7 +16,8 @@ class SpecFileCreator
       spec_file_name,
       SpecGenerator.new(
         number: @number,
-        test_cases: @test_cases
+        test_cases: @test_cases,
+        solvers: @solvers
       ).to_s
     )
   end
