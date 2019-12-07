@@ -1,0 +1,16 @@
+class Solver<%= @number %>_<%= @solver.id %>
+  <% @known_variables.each do |variable| -%>
+    <%-= "property #{variable.name} : #{variable.type}" %>
+  <% end -%>
+
+  def initialize(
+    <% @known_variables.each do |variable| -%>
+      <%-= "@#{variable.name}" %>,
+    <% end -%>
+    
+  );end
+
+  def solve
+    <%= @solver.code %>
+  end
+end

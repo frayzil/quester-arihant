@@ -1,0 +1,6 @@
+The dimensions of a/b in the equation P = (a - t^2)/(bx)
+
+(a) M2LT-3
+(b) MT-2
+(c) ML3T-1
+(d) LT-3
