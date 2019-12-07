@@ -14,6 +14,7 @@ test_cases:
     -
       name: float64
       value: 3.0
+
   - 
     -
       name: int32_1
@@ -31,7 +32,7 @@ solvers:
     variable: float64
     condition: eq
     code: >
-      # your code starts here
+      #
           int32_1 + int32_2
 
   - 
@@ -39,5 +40,5 @@ solvers:
     variable: int32_1
     condition: eq
     code: >
-      # your code starts here
+      #
           float64 - int32_2
