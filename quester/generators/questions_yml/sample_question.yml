@@ -1,0 +1,37 @@
+variables:
+  - int32_1
+  - int32_2
+  - float64
+
+test_cases:
+  - 
+    -
+      name: int32_1
+      value: 1
+    -
+      name: int32_2
+      value: 2
+    -
+      name: float64
+      value: 3.0
+  - 
+    -
+      name: int32_1
+      value: 2
+    -
+      name: int32_2
+      value: 1
+    -
+      name: float64
+      value: 3.0
+
+solvers:
+  - 
+    variable: float64
+    condition: eq
+    code: int32_1 + int32_2
+
+  - 
+    variable: int32_1
+    condition: eq
+    code: float64 - int32_2
