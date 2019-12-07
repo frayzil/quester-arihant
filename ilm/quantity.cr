@@ -48,6 +48,14 @@ class Quantity
 
   PERMEABILITY = FORCE * AREA / CHARGE ** 2
 
+  STIFFNESS = FORCE / LENGTH
+  STRESS = PRESSURE
+
+  EMF = ELECTRIC_FIELD * LENGTH
+  POTENTIAL_DIFFERENCE = EMF
+  ELECTRIC_POTENTIAL = EMF
+
+
   def initialize(@dimension : Dimension = Dimension::NIL)
   end
 
