@@ -1,30 +1,30 @@
 require "spec"
 <%- @solvers.each do |solver| %>
-  require "./<%= @number %>_<%= solver.id %>_scenario.cr"
-  require "./<%= @number %>_<%= solver.id %>_solver.cr"
+require "./<%= @number %>_<%= solver.id %>_scenario.cr"
+require "./<%= @number %>_<%= solver.id %>_solver.cr"
 
-  describe Solver<%= @number %>_<%= solver.id %> do
-    settings = [
-      <%- @test_cases.each do |test_case| -%>
+describe Solver<%= @number %>_<%= solver.id %> do
+  settings = [
+    <%- @test_cases.each do |test_case| -%>
 
-      {
-        <% test_case.variable_values.each do |vv| -%>
-          <%-= "#{vv.name}: #{vv.value}" %>,
-        <% end -%>
-
-      },
+    {
+      <% test_case.variable_values.each do |vv| -%>
+        <%-= "#{vv.name}: #{vv.value}" %>,
       <% end -%>
 
-    ]
+    },
+    <% end -%>
 
-    settings.each do |setting|
-      Scenario<%= @number %>_<%= solver.id %>.new(
-        <% @test_cases.first.variable_values.each do |vv| -%>
-          <%-= "#{vv.name}: setting[:#{vv.name}]" %>,
-        <% end -%>
+  ]
 
-      ).test
-    end
+  settings.each do |setting|
+    Scenario<%= @number %>_<%= solver.id %>.new(
+      <% @test_cases.first.variable_values.each do |vv| -%>
+        <%-= "#{vv.name}: setting[:#{vv.name}]" %>,
+      <% end -%>
+
+    ).test
   end
+end
 
 <% end -%>
