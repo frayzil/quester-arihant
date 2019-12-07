@@ -1,0 +1,27 @@
+class Scenario<%= @number %>_<%= @solver.id %>
+  <% @variables.each do |variable| -%>
+    <%-= "property #{variable.name} : #{variable.type}" %>
+  <% end -%>
+
+  def initialize(
+    <% @variables.each do |variable| -%>
+      <%-= "@#{variable.name}" %>,
+    <% end -%>
+
+  );end
+
+  def test
+    it "should pass" do
+      solver = Solver<%= @number %>_<%= @solver.id %>.new(
+        <% @known_variables.each do |variable| -%>
+          <%-= "#{variable.name}: #{variable.name}" %>,
+        <% end -%>
+
+      )
+
+      answer = solver.solve
+
+      answer.should <%= @solver.condition %>(<%= @answer_variable.name %>)
+    end
+  end
+end
