@@ -22,6 +22,14 @@ describe Solver23_1 do
       
     },
     
+    {
+      quantity_1: Quantity::HEAT,
+      quantity_2: Quantity::WORK_DONE,
+      quantity_3: Quantity::ENERGY,
+      selected: "yes",
+      
+    },
+    
   ]
 
   settings.each do |setting|

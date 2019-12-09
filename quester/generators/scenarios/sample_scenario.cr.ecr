@@ -1,3 +1,5 @@
+require "../../ilm/quantity.cr"
+
 class Scenario<%= @number %>_<%= @solver.id %>
   <% @variables.each do |variable| -%>
     <%-= "property #{variable.name} : #{variable.type}" %>

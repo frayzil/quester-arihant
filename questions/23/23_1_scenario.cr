@@ -1,3 +1,5 @@
+require "../../ilm/quantity.cr"
+
 class Scenario23_1
   property quantity_1 : Quantity
   property quantity_2 : Quantity
