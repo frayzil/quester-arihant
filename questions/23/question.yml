@@ -40,6 +40,20 @@ test_cases:
       name: selected
       value: "\"yes\""
 
+  - 
+    -
+      name: quantity_1
+      value: Heat
+    -
+      name: quantity_2
+      value: Work done
+    -
+      name: quantity_3
+      value: Energy
+    -
+      name: selected
+      value: "\"yes\""
+
 solvers:
   - 
     id: 1

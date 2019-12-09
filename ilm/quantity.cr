@@ -1,3 +1,5 @@
+require "./dimension.cr"
+
 class Quantity
   property dimension
 
@@ -54,6 +56,9 @@ class Quantity
   EMF = ELECTRIC_FIELD * LENGTH
   POTENTIAL_DIFFERENCE = EMF
   ELECTRIC_POTENTIAL = EMF
+
+  HEAT = ENERGY
+  WORK_DONE = ENERGY
 
 
   def initialize(@dimension : Dimension = Dimension::NIL)

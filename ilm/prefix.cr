@@ -1,12 +1,12 @@
 require "yaml"
 
-module Unit
+class Unit
   class Prefix
     property name, symbol, decimal_exponent, english_name
 
     DATA = YAML.parse File.read("./prefixes.yml")
 
-    def self.for(@symbol : String)
+    def self.for(symbol : String)
       new(DATA[symbol.to_s])
     end
 
