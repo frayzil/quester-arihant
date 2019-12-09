@@ -55,6 +55,9 @@ class Quantity
   POTENTIAL_DIFFERENCE = EMF
   ELECTRIC_POTENTIAL = EMF
 
+  HEAT = ENERGY
+  WORK_DONE = ENERGY
+
 
   def initialize(@dimension : Dimension = Dimension::NIL)
   end
