@@ -1,4 +1,4 @@
-require "../../ilm/quantity.cr"
+require "../../ilm/**"
 
 class Scenario23_1
   property quantity_1 : Quantity
