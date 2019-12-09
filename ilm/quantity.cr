@@ -1,3 +1,5 @@
+require "./dimension.cr"
+
 class Quantity
   property dimension
 
