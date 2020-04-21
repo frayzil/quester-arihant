@@ -5,8 +5,8 @@ Create a software that automatically solves a question with dynamic values with 
 
 ## Example
 Consider the following questions and their answers:
-Is it possible to add the following units: 1 kilometer and 1 mile? Yes.
-Is it possible to add the following units: 1 kilometer and 1 kilogram? No.
+* Is it possible to add the following units: 1 kilometer and 1 mile? Yes.
+* Is it possible to add the following units: 1 kilometer and 1 kilogram? No.
 
 The solution to these questions is fairly simple. If the dimensions of the units are the same, they can be added. Else, they cannot be added.
 
