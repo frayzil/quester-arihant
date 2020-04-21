@@ -155,4 +155,4 @@ end
 Ilm is a crystal library that encapsulates the concepts of science.
 To make the above question work, we must add the unit 'Mile' to Ilm.
 
-inside the class definition of `Unit`, add `MILE = new(symbol: 'm', dimension: Dimension::L)`
+inside the class definition of `Unit` at `ilm/unit.cr`, add `MILE = new(symbol: 'm', dimension: Dimension::L)`
