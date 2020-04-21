@@ -150,3 +150,9 @@ describe Solver do
 end
 
 ```
+
+## Ilm
+Ilm is a crystal library that encapsulates the concepts of science.
+To make the above question work, we must add the unit 'Mile' to Ilm.
+
+inside the class definition of `Unit`, add `MILE = new(symbol: 'm', dimension: Dimension::L)`
