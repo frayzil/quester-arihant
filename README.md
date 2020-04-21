@@ -59,7 +59,7 @@ source: >
 ```
 
 ## Output Crystal Code
-The application will generate the following files based on the above YAML.
+By running `crystal quester/generator.cr`, the application will generate the following files based on the above YAML.
 
 ### Scenario File
 ```crystal
@@ -163,3 +163,6 @@ class Unit
   ...
 end
 ```
+
+## Spec
+By running `crystal spec/questions/:id`, the crystal code that was generated will be executed and the tests will pass if everything is fine.
